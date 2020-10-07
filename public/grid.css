@@ -1,0 +1,40 @@
+@media (min-width: 769px) {
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container,
+    .content {
+        padding: 0 20px;
+    }.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+    } .destaque .container h1 {
+        text-align: right;
+        padding-right: 15px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;        
+    } .destaque .container .flex {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    } .destaque .container h1 {
+        text-align: center;
+        padding-right: 0px;
+        margin-left: 0;
+    } .destaque .container .flex button {
+        display: none;
+    }
+}
+
+
+

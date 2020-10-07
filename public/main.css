@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #d6d6d6;  
+    padding: 0;
+    margin: 0;
+} 
+
+.scroll {
+    position: fixed;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    z-index: 1000;  
+    height: 120px;
+    background: transparent;
+    transition: 150ms;
+}   
+
+nav .content { 
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+} nav .content .logo i {
+font-size: 50px;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+} 
+
+.background {
+    background-image: url(/public/images/rainbow.jpg);
+    background-position: center;
+    background-size: cover 100vh;
+    background-repeat: no-repeat;
+    z-index: -1000;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;         
+    color: rgba(0,0,0,0);
+    
+} header .hello {
+    padding: 60px;
+    text-align: right;      
+    
+} header .hello button {
+    padding: 10px 20px;
+    text-transform: uppercase;  
+    font-weight: 900;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    transition: ease-out 300ms;
+} header .hello button:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    transition: ease-out 300ms;
+} header .hello h2 {
+    padding: 0;
+    margin-top: -15px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 400;
+} header .hello h1 {
+    position: relative;
+    right: -5px;
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-weight: 800;
+}
+.content .main {
+    display: flex;
+    align-items: center;
+} 
+
+.content .main ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.social ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 22px;
+} 
+
+.nav-colored {
+    background-color: #2c3e50;
+    color: white;  
+    
+}
+
+.destaque .container {
+    padding-top: 15px;
+    padding-bottom: 30px;
+} .destaque .container h1 {
+    font-size: 42px;
+    margin-left: 20px;
+    border-bottom: 4px solid black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+} .card {
+    background-color: white;
+    border-radius: 30px 30px 20px 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: ease-out 200ms;
+} .card:hover {
+    box-shadow: 0px 2px 8px -2px #555555;
+}.card img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    height: 180px;
+    object-fit: cover;
+} .card .title {
+    font-size: 32px;
+    padding: 10px 20px;
+    font-weight: 700;
+} .card .price {
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    
+} .card .price .value {
+    color: orangered;
+    font-size: 26px;
+    font-weight: bolder;
+} .cards .price .times {
+    font-size: 12px;
+    margin-left: 10px;
+} .cards .price .times .bigger {
+    font-weight: bolder;
+}.cards .tags {
+    text-align: right;
+}.cards .tags ul li {
+    display: inline-block;
+    border-radius: 6px;
+    list-style: none;
+    border: 1px solid #222;
+    padding: 5px 6px;
+    margin: 2px;
+    font-size: 12px;
+    color: #222;
+} .cards .tags ul {
+    padding: 0 20px;
+} .destaque .container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .destaque .container .flex button {
+    padding: 10px 20px;
+    margin-right: 20px;
+    text-transform: uppercase;  
+    font-weight: 900;
+    border: 2px solid black;
+    background-color: rgba(0,0,0,0);
+    color: black;
+}
+
+.orcamento .container h1 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 56px;
+} .orcamento .container h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+} .orcamento .container .grid {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+} .orcamento .container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+} .orcamento {
+    background-color: #059074;
+    color: white;
+} .orcamento .contatos {
+    border-left: 2px solid white;
+    margin-left: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+    margin-top: 13px;
+} .orcamento .contatos ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 30px;
+    margin-right: 10px;
+} .orcamento .contatos ul {
+    padding: 0;
+    margin: 0;
+} .orcamento .contatos i {
+    margin-right: 5px;
+} footer {
+    background-color: #2c3e50;
+    height: 200px;
+    width: 100%;
+}
