@@ -5,6 +5,8 @@
     }
 }
 
+
+
 @media (max-width: 900px) {
     .background {
         background-image: url(/public/images/rainbow.jpg);
@@ -14,6 +16,15 @@
         z-index: -1000;
         width: 100%;
         height: 100vh;
+    }
+
+    .info .detalhes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .photo img {
+        width: 100%;
+        border-radius: 0px;
     }
     .container,
     .content {
@@ -39,6 +50,24 @@
         width: 10px;
     } footer .container {
         justify-content: space-evenly;
+    } .categorias .container .flex {
+    flex-direction: column!important;
+    align-items: flex-start;
+    } .categorias .container .tag {
+        flex-direction: column;
+    position: relative;
+    left: 0;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    }
+
+    .categorias .container .tag p {
+        margin-left: 10px;
+        position: relative;
+        top: 0;
+        left: -7px;
+        margin-top: -40px;
+        margin-bottom: 50px;
     }
 }
 
