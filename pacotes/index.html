@@ -6,13 +6,13 @@
     <title>Agencia de Viagens</title>
     <link rel="shortcut icon" href="https://static1.squarespace.com/static/59a4b791e5dd5bce815a2916/t/59a4dfb97131a5afe9c778bc/1579568340784/?format=1500w" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0e1c1e8b54.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/main.css">
-    <link rel="stylesheet" href="/public/grid.css">
+    <link rel="stylesheet" href="../../public/main.css">
+    <link rel="stylesheet" href="../../public/grid.css">
 </head>
 <body>
    
-    <nav class="scroll">
-        <div>
+    <nav class="scroll2">
+        
         <div class="content">
             <div class="main">
                 <div class="logo">
@@ -32,19 +32,28 @@
                 </ul>
             </div>
         </div>
-    </div>
+    
     </nav>
     
+    <div class="top">
     <main>
-        <div class="background">
-            <header>
-                <div class="hello">
-                    <h1>O MUNDO ESTÁ<br> A SUA ESPERA</h1>
-                    <h2>O QUE VOCÊ ESTÁ ESPERANDO?</h2>
-                    <button>Conheça nossos pacotes!</button>
-                </div>           
-            </header>
-        </div>
+        <section class="categorias">
+            <div class="container">
+                <div class="flex">
+                    <h1>Se pudesse escolher,<br>para onde iria AGORA?</h1>
+                    
+                </div>
+                <div class="cards">
+                    <a href="../pacotes/praia/"><div class="card">Praia</div></a>
+                    <a href="../pacotes/campo/"><div class="card">Campo</div></a>
+                    <a href="../pacotes/centrourbano/"><div class="card">Centro Urbano</div></a>
+                    <a href="../pacotes/historico/"><div class="card">Cidade Histórica</div></a>
+                    <a href="../pacotes/nordeste/"><div class="card">Nordeste</div></a>
+                    <a href="../pacotes/internacional/"><div class="card">Viagem Internacional</div></a>
+    
+                </div>
+            </div>
+        </section>
             
         
         
@@ -53,13 +62,13 @@
             <div class="container">
                 <div class="flex">
                     <h1>PACOTES EM DESTAQUE</h1>
-                    <button>Conheça nossos pacotes!</button>
+
                 </div>
                 <div class="cards">
 
                     <div class="card">
                         <img src="/public/images/rio.jpg" alt="">
-                        <div class="title">Rio de Janeiro</div>
+                        <div class="title"><p>Rio de Janeiro</p><p id="off">-27%</p></div>
                         <div class="price">
                             <div class="value">R$2999,99</div>
                             <div class="times">em até 12x<br><span class="bigger">SEM JUROS</span></div>
@@ -74,7 +83,7 @@
 
                     <div class="card">
                         <img src="/public/images/gramado.jpg" alt="">
-                        <div class="title">Gramado</div>
+                        <div class="title"><p>Gramado</p><p id="off">-12%</p></div>
                         <div class="price">
                             <div class="value">R$1999,99</div>
                             <div class="times">em até 12x<br><span class="bigger">SEM JUROS</span></div>
@@ -89,7 +98,7 @@
 
                     <div class="card">
                         <img src="/public/images/jericoacoara.jpg" alt="">
-                        <div class="title">Jericoacoara</div>
+                        <div class="title"><p>Jericoacoara</p><p id="off">-12%</p></div>
                         <div class="price">
                             <div class="value">R$999,99</div>
                             <div class="times">em até 12x<br><span class="bigger">SEM JUROS</span></div>
@@ -128,22 +137,7 @@
             </div> 
         </section>
 
-        <section class="categorias">
-            <div class="container">
-                <div class="flex">
-                    <h1>Se pudesse escolher,<br>para onde iria AGORA?</h1>
-                    <button>Conheça nossos pacotes!</button>
-                </div>
-                <div class="cards">
-                    <a href="../pacotes/praia/"><div class="card">Praia</div></a>
-                    <a href="../pacotes/campo/"><div class="card">Campo</div></a>
-                    <a href="../pacotes/centrourbano/"><div class="card">Centro Urbano</div></a>
-                    <a href="../pacotes/historico/"><div class="card">Cidade Histórica</div></a>
-                    <a href="../pacotes/nordeste/"><div class="card">Nordeste</div></a>
-                    <a href="../pacotes/internacional/"><div class="card">Viagem Internacional</div></a>   
-                </div>
-            </div>
-        </section>
+        
         <footer><div class="container">
             <div class="logo">
                 <i class="far fa-compass"></i>
@@ -160,9 +154,10 @@
             </div>
         </div></footer>
     </main>
+</div>
 
     
 
-    <script src="/public/script.js"></script>
+    <script src="../../public/script.js"></script>
 </body>
 </html>
